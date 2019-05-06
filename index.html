@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8' /> 
+	<meta http-equiv='content-language' content='EN-GB' />
+	<meta name='author' content='Lewis Walsh' />
+	<meta name='description' content='A contextual clock built entirely in JavaScript. Uses system time of client machine, looks best in full-screen mode (push F11)' />
+	<meta name='keywords' content='clock, contextual, time, lewis walsh, javascript, js' />
+  <title>Lewis' contextual clock</title>
+  <link rel='stylesheet' href='clock.css' media='screen' />
+</head>
+<body>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10067849-5']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+	<article>
+    <div>
+      <table>
+        <tr>
+          <td id='a1'>I</td>
+          <td id='a2'>T</td>
+          <td id='a3'>Z</td>
+          <td id='a4'>I</td>
+          <td id='a5'>S</td>
+          <td id='a6'>D</td>
+          <td id='a7'>A</td>
+          <td id='a8'>M</td>
+          <td id='a9'>T</td>
+          <td id='a10'>E</td>
+          <td id='a11'>N</td>
+        </tr>
+        <tr>
+          <td id='j1'>T</td>
+          <td id='j2'>W</td>
+          <td id='j3'>E</td>
+          <td id='j4'>N</td>
+          <td id='j5'>T</td>
+          <td id='j6'>Y</td>
+          <td id='j7'>P</td>
+          <td id='j8'>F</td>
+          <td id='j9'>I</td>
+          <td id='j10'>V</td>
+          <td id='j11'>E</td>
+        </tr>
+        <tr>
+          <td id='b1'>Q</td>
+          <td id='b2'>U</td>
+          <td id='b3'>A</td>
+          <td id='b4'>R</td>
+          <td id='b5'>T</td>
+          <td id='b6'>E</td>
+          <td id='b7'>R</td>
+          <td id='b8'>B</td>
+          <td id='b9'>D</td>
+          <td id='b10'>T</td>
+          <td id='b11'>O</td>
+        </tr>
+        <tr>
+          <td id='c1'>C</td>
+          <td id='c2'>H</td>
+          <td id='c3'>A</td>
+          <td id='c4'>L</td>
+          <td id='c5'>F</td>
+          <td id='c6'>N</td>
+          <td id='c7'>P</td>
+          <td id='c8'>A</td>
+          <td id='c9'>S</td>
+          <td id='c10'>T</td>
+          <td id='c11'>Q</td>
+        </tr>
+        <tr>
+          <td id='d1'>O</td>
+          <td id='d2'>N</td>
+          <td id='d3'>E</td>
+          <td id='d4'>T</td>
+          <td id='d5'>W</td>
+          <td id='d6'>O</td>
+          <td id='d7'>T</td>
+          <td id='d8'>H</td>
+          <td id='d9'>R</td>
+          <td id='d10'>E</td>
+          <td id='d11'>E</td>
+        </tr>
+        <tr>
+          <td id='e1'>F</td>
+          <td id='e2'>O</td>
+          <td id='e3'>U</td>
+          <td id='e4'>R</td>
+          <td id='e5'>F</td>
+          <td id='e6'>I</td>
+          <td id='e7'>V</td>
+          <td id='e8'>E</td>
+          <td id='e9'>S</td>
+          <td id='e10'>I</td>
+          <td id='e11'>X</td>
+        </tr>
+        <tr>
+          <td id='f1'>S</td>
+          <td id='f2'>E</td>
+          <td id='f3'>V</td>
+          <td id='f4'>E</td>
+          <td id='f5'>N</td>
+          <td id='f6'>G</td>
+          <td id='f7'>E</td>
+          <td id='f8'>I</td>
+          <td id='f9'>G</td>
+          <td id='f10'>H</td>
+          <td id='f11'>T</td>
+        </tr>
+        <tr>
+          <td id='g1'>X</td>
+          <td id='g2'>O</td>
+          <td id='g3'>T</td>
+          <td id='g4'>E</td>
+          <td id='g5'>N</td>
+          <td id='g6'>T</td>
+          <td id='g7'>W</td>
+          <td id='g8'>E</td>
+          <td id='g9'>L</td>
+          <td id='g10'>V</td>
+          <td id='g11'>E</td>
+        </tr>
+        <tr>
+          <td id='h1'>E</td>
+          <td id='h2'>L</td>
+          <td id='h3'>E</td>
+          <td id='h4'>V</td>
+          <td id='h5'>E</td>
+          <td id='h6'>N</td>
+          <td id='h7'>J</td>
+          <td id='h8'>N</td>
+          <td id='h9'>I</td>
+          <td id='h10'>N</td>
+          <td id='h11'>E</td>
+        </tr>
+        <tr>
+          <td id='i1'>K</td>
+          <td id='i2'>J</td>
+          <td id='i3'>T</td>
+          <td id='i4'>Z</td>
+          <td id='i5'>O</td>
+          <td id='i6'>W</td>
+          <td id='i7'>C</td>
+          <td id='i8'>L</td>
+          <td id='i9'>O</td>
+          <td id='i10'>C</td>
+          <td id='i11'>K</td>
+        </tr>
+      </table>
+    </div>
+  </article>
+  <script src='clock.js'></script>
+</body>
+</html>
